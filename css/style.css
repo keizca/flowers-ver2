@@ -14,12 +14,12 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 200px;
   top: 0;
   left: 0;
   color: white;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 70px;
+  font-size: 20px;
   text-shadow: 0px 0px 20px white;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .flower {
   position: absolute;
-  bottom: 10vmin;
+  bottom: 30vmin;
   transform-origin: bottom center;
   z-index: 10;
   --fl-speed: 0.8s;
@@ -62,7 +62,7 @@ body {
 }
 
 .flower--1 .flower__line {
-  height: 70vmin;
+  height: 90vmin;
   animation-delay: 0.3s;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .flower--2 .flower__line {
-  height: 60vmin;
+  height: 80vmin;
   animation-delay: 0.6s;
 }
 
@@ -166,8 +166,8 @@ body {
   left: 0;
   top: 0;
   transform: translate(-50%, -100%);
-  width: 8vmin;
-  height: 8vmin;
+  width: 10vmin;
+  height: 10vmin;
   background-color: #fff;
   filter: blur(10vmin);
 }
@@ -176,11 +176,11 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 8vmin;
+  width: 10vmin;
   height: 11vmin;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
-  background-color: #a7ffee;
-  background-image: linear-gradient(to top, #fff, #fff);
+  background-color: #dfae93;
+  background-image: linear-gradient(to top, #f7b2b2, #bd0c0c);
   transform-origin: bottom center;
   opacity: 0.9;
   box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
@@ -204,7 +204,7 @@ body {
   transform-origin: bottom left;
   border-radius: 4vmin 10vmin 4vmin 4vmin;
   transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
-  background-image: linear-gradient(to top, rgba(255, 2555, 255, 0.4), #fff);
+  background-image: linear-gradient(to top, rgba(255, 2555, 255, 0.4), #e1e122);
   z-index: 1;
   opacity: 0.8;
   -webkit-transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
@@ -220,7 +220,7 @@ body {
   width: 9vmin;
   height: 4vmin;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #eaeca0;
 }
 
 .flower__white-circle::after {
@@ -236,9 +236,9 @@ body {
 }
 
 .flower__line {
-  height: 55vmin;
+  height: 75vmin;
   width: 1.5vmin;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, #fff, #fff);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, #0f220e, #86f597);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   animation: grow-flower-tree 4s backwards;
 }
@@ -253,7 +253,7 @@ body {
   height: var(--h);
   border-top-right-radius: var(--h);
   border-bottom-left-radius: var(--h);
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), #fff);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8), #1b4616);
 }
 
 .flower__line__leaf--1 {
@@ -299,14 +299,14 @@ body {
   bottom: 0vmin;
   width: 1vmin;
   height: 1vmin;
-  background-color: rgb(255, 251, 0);
+  background-color: rgb(233, 230, 70);
   border-radius: 50%;
   filter: blur(0.2vmin);
   animation: light-ans 4s linear infinite backwards;
 }
 
 .flower__light:nth-child(odd) {
-  background-color: #fff;
+  background-color: #8a4141;
 }
 
 .flower__light--1 {
@@ -350,7 +350,7 @@ body {
 }
 
 .flower__grass {
-  --c: #fff;
+  --c: #83ed8b;
   --line-w: 1.5vmin;
   position: absolute;
   bottom: 12vmin;
@@ -537,7 +537,8 @@ body {
 .flower__g-long {
   --w: 2vmin;
   --h: 6vmin;
-  --c: #fff;
+  --c: #83ed8b;
+  ;
   position: absolute;
   bottom: 10vmin;
   left: -3vmin;
@@ -592,9 +593,9 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #fff;
+  border-left: 2vmin solid #83ed8b;
   background-image: linear-gradient(to bottom, transparent, var(--dark-color) 60%);
-  -webkit-mask-image: linear-gradient(to top, transparent 30%, #fff 60%);
+  -webkit-mask-image: linear-gradient(to top, transparent 30%, #83ed8b 60%);
 }
 
 .flower__g-right--1 {
@@ -662,7 +663,7 @@ body {
 .flower__g-front__line {
   width: 0.3vmin;
   height: 20vmin;
-  background-image: linear-gradient(to top, transparent, #fff, transparent 100%);
+  background-image: linear-gradient(to top, transparent, #83ed8b, transparent 100%);
   position: relative;
 }
 
@@ -764,9 +765,9 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
-  -webkit-mask-image: linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
-  mask-image: linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, #83ed8b 50%, transparent 50%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom right, #83ed8b 50%, transparent 50%, transparent);
+  mask-image: linear-gradient(to bottom right, #83ed8b 50%, transparent 50%, transparent);
 }
 
 .flower__g-fr {
@@ -798,8 +799,8 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #fff;
-  -webkit-mask-image: linear-gradient(to top, transparent 25%, #fff 50%);
+  border-left: 2vmin solid #83ed8b;
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, #83ed8b 50%);
   position: relative;
   z-index: 1;
 }
@@ -812,8 +813,8 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, #fff 45%, transparent 50%, transparent);
-  -webkit-mask-image: linear-gradient(135deg, #fff 40%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, #83ed8b 45%, transparent 50%, transparent);
+  -webkit-mask-image: linear-gradient(135deg, #83ed8b 40%, transparent 50%, transparent);
 }
 
 .flower__g-fr__leaf--1 {
