@@ -38,6 +38,7 @@
   height: 100vh;
   text-shadow: 0 0 20px white;
   letter-spacing: 0px;
+  font-size: 12px;
 }
 
 @media (min-width: 500px) {
@@ -69,13 +70,13 @@ a {
 
 .btn {
   border: none;
-  width: 15em;
-  height: 5em;
+  width: 8em;
+  height: 2em;
   border-radius: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 2px;
   background: #1C1A1C;
   cursor: pointer;
   transition: all 450ms ease-in-out;
@@ -84,12 +85,13 @@ a {
 .sparkle {
   fill: #AAAAAA;
   transition: all 800ms ease;
+  height: 15px;
 }
 
 .text {
   font-weight: 600;
   color: #AAAAAA;
-  font-size: medium;
+  font-size: 12px;
 }
 
 .btn:hover {
