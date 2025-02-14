@@ -318,7 +318,30 @@
   <h1 class="title"><span id="title"></span></h1>
 </body>
 
-</html>
-
 <!-- Import Javascript -->
 <script src="js/main.js"></script>
+
+<audio id="backgroundMusic" autoplay loop>
+  <source src="audio/hereWithMe.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  function setupMusic() {
+    const music = document.getElementById('backgroundMusic');
+    const currentTime = localStorage.getItem('musicCurrentTime') || 0;
+
+    music.currentTime = parseFloat(currentTime);
+    music.play().catch(console.error);
+
+    setInterval(() => {
+      localStorage.setItem('musicCurrentTime', music.currentTime);
+    }, 1000);
+  }
+
+  window.addEventListener('load', setupMusic);
+</script>
+
+
+</html>
+
